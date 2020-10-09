@@ -7,7 +7,7 @@
       "url": "https://maptiles.turku.fi/data/finland.json"
     }
   },
-  "sprite": "https://raw.githubusercontent.com/City-of-Helsinki/hel-osm-high-contrast/master/sprite.svg",
+  "sprite": "https://raw.githubusercontent.com/City-of-Helsinki/hel-osm-high-contrast/master/sprite",
   "glyphs": "https://maptiles.turku.fi/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
