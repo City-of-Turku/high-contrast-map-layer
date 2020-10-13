@@ -5,7 +5,7 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "mbtiles://helsinki.mbtiles"
+      "url": "https://maptiles.turku.fi/data/finland.json"
     }
   },
   "sprite": "{styleJsonFolder}/sprite",
