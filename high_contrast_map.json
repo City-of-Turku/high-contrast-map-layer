@@ -1,13 +1,14 @@
 {
   "version": 8,
   "name": "High Contrast Map",
+  "metadata": {},
   "sources": {
     "openmaptiles": {
       "type": "vector",
       "url": "https://maptiles.turku.fi/data/finland.json"
     }
   },
-  "glyphs": "https://maptiles.turku.fi/fonts/{fontstack}/{range}.pbf",
+  "glyphs": "{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
@@ -234,7 +235,7 @@
       "filter": ["==", "$type", "Point"],
       "layout": {
         "text-field": "{housenumber}",
-        "text-font": ["Noto Sans Bold"],
+        "text-font": ["Lato Bold"],
         "text-size": {"stops": [[17, 16], [19, 25]]}
       },
       "paint": {
@@ -639,7 +640,7 @@
         "icon-size": 1,
         "text-anchor": "top",
         "text-field": "{name:latin}\n{name:nonlatin}",
-        "text-font": ["Noto Sans Regular"],
+        "text-font": ["Lato Regular"],
         "text-max-width": 8,
         "text-offset": [0, 0.5],
         "visibility": "none",
@@ -663,7 +664,7 @@
         "icon-size": 1,
         "text-anchor": "top",
         "text-field": "{name:latin}\n{name:nonlatin}",
-        "text-font": ["Noto Sans Regular"],
+        "text-font": ["Lato Regular"],
         "text-max-width": 8,
         "text-offset": [0, 0.5],
         "text-size": {"stops": [[11, 20], [12, 30]]},
@@ -687,7 +688,7 @@
       "layout": {
         "symbol-placement": "line",
         "text-field": "{name:latin} {name:nonlatin}",
-        "text-font": ["Noto Sans Bold"],
+        "text-font": ["Lato Bold"],
         "visibility": "visible",
         "text-transform": "none",
         "text-size": {"base": 1.4, "stops": [[10, 15], [17, 22], [20, 25]]},
@@ -715,7 +716,7 @@
       "layout": {
         "text-anchor": "center",
         "text-field": "{name:latin}\n{name:nonlatin}",
-        "text-font": ["Noto Sans Regular"],
+        "text-font": ["Lato Regular"],
         "text-max-width": 6,
         "visibility": "visible",
         "text-transform": "uppercase",
@@ -737,7 +738,7 @@
       "filter": ["all", ["==", "$type", "Point"], ["==", "class", "city"]],
       "layout": {
         "text-field": "{name:latin}\n{name:nonlatin}",
-        "text-font": ["Noto Sans Regular"],
+        "text-font": ["Lato Regular"],
         "text-max-width": 10,
         "text-transform": "uppercase",
         "text-size": {"stops": [[3, 20], [8, 30]]}
@@ -763,7 +764,7 @@
       ],
       "layout": {
         "text-field": "{name:latin}",
-        "text-font": ["Noto Sans Regular"],
+        "text-font": ["Lato Regular"],
         "text-max-width": 10,
         "text-size": {"stops": [[3, 12], [8, 22]]},
         "visibility": "visible"
@@ -789,7 +790,7 @@
       ],
       "layout": {
         "text-field": "{name:latin}",
-        "text-font": ["Noto Sans Regular"],
+        "text-font": ["Lato Regular"],
         "text-max-width": 10,
         "text-size": {"stops": [[3, 12], [8, 22]]},
         "visibility": "visible"
