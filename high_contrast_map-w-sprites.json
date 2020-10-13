@@ -8,8 +8,8 @@
       "url": "https://maptiles.turku.fi/data/finland.json"
     }
   },
-  "sprite": "{styleJsonFolder}/sprite",
-  "glyphs": "{fontstack}/{range}.pbf",
+  "sprite": "/data/styles/high-contrast-map-layer/sprite",
+  "glyphs": "https://maptiles.turku.fi/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
