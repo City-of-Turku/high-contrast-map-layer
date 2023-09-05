@@ -5,11 +5,11 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "https://maptiles.turku.fi/data/finland.json"
+      "url": "mbtiles://helsinki.mbtiles"
     }
   },
-  "sprite": "/data/styles/high-contrast-map-layer/sprite",
-  "glyphs": "https://maptiles.turku.fi/fonts/{fontstack}/{range}.pbf",
+  "sprite": "{styleJsonFolder}/sprite",
+  "glyphs": "{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
@@ -685,10 +685,10 @@
         "text-size": 16
       },
       "paint": {
-        "text-halo-blur": 1,
+        "text-halo-blur": 0,
         "text-color": "rgba(0, 0, 0, 1)",
-        "text-halo-color": "rgba(250, 250, 250, 1)",
-        "text-halo-width": 20
+        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-width": 5
       }
     },
     {
@@ -706,14 +706,14 @@
         "text-max-width": 8,
         "text-offset": [0, 0.5],
         "text-size": {"stops": [[11, 20], [12, 30]]},
-        "visibility": "visible",
-        "text-transform": "uppercase"
+        "text-transform": "none",
+        "visibility": "visible"
       },
       "paint": {
         "text-color": "rgba(0, 0, 0, 1)",
-        "text-halo-blur": 1,
-        "text-halo-color": "rgba(255, 255, 255, 1)",
-        "text-halo-width": 60
+        "text-halo-blur": 0,
+        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-halo-width": 4
       }
     },
     {
@@ -745,7 +745,7 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "place",
-      "minzoom": 11,
+      "minzoom": 12,
       "filter": [
         "all",
         ["==", "$type", "Point"],
@@ -757,14 +757,14 @@
         "text-font": ["Lato Regular"],
         "text-max-width": 6,
         "visibility": "visible",
-        "text-transform": "uppercase",
+        "text-transform": "none",
         "text-size": {"stops": [[6, 14], [12, 25], [15, 30], [17, 35]]}
       },
       "paint": {
         "text-halo-blur": 0,
         "text-halo-color": "hsl(0, 0%, 100%)",
         "text-color": "rgba(0, 0, 0, 1)",
-        "text-halo-width": 30
+        "text-halo-width": 5
       }
     },
     {
@@ -772,20 +772,19 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "place",
-      "maxzoom": 16,
+      "maxzoom": 12,
       "filter": ["all", ["==", "$type", "Point"], ["==", "class", "city"]],
       "layout": {
         "text-field": "{name:latin}\n{name:nonlatin}",
         "text-font": ["Lato Regular"],
         "text-max-width": 10,
-        "text-transform": "uppercase",
-        "text-size": {"stops": [[3, 20], [8, 30]]}
+        "text-size": {"stops": [[3, 20], [8, 35]]}
       },
       "paint": {
-        "text-color": "hsl(0, 0%, 0%)",
         "text-halo-blur": 0,
-        "text-halo-width": 50,
-        "text-halo-color": "rgba(255, 255, 255, 1)"
+        "text-halo-color": "hsl(0, 0%, 100%)",
+        "text-color": "rgba(0, 0, 0, 1)",
+        "text-halo-width": 5
       }
     },
     {
