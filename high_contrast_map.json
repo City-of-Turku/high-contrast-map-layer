@@ -669,7 +669,7 @@
         "text-offset": [0, 0.5],
         "text-size": {"stops": [[11, 20], [12, 30]]},
         "visibility": "visible",
-        "text-transform": "uppercase"
+        "text-transform": "none"
       },
       "paint": {
         "text-color": "rgba(0, 0, 0, 1)",
@@ -719,7 +719,7 @@
         "text-font": ["Lato Regular"],
         "text-max-width": 6,
         "visibility": "visible",
-        "text-transform": "uppercase",
+        "text-transform": "none",
         "text-size": {"stops": [[6, 14], [12, 25], [15, 30], [17, 35]]}
       },
       "paint": {
@@ -740,7 +740,7 @@
         "text-field": "{name:latin}\n{name:nonlatin}",
         "text-font": ["Lato Regular"],
         "text-max-width": 10,
-        "text-transform": "uppercase",
+        "text-transform": "none",
         "text-size": {"stops": [[3, 20], [8, 30]]}
       },
       "paint": {
