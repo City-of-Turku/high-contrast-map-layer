@@ -5,10 +5,10 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "https://maptiles.turku.fi/data/finland.json"
+      "url": "mbtiles://tiles.mbtiles"
     }
   },
-  "sprite": "/data/styles/high-contrast-map-layer/sprite",
+  "sprite": "/styles/high-contrast-map-layer/sprite",
   "glyphs": "https://maptiles.turku.fi/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
