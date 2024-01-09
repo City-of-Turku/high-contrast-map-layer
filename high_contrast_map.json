@@ -5,7 +5,7 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "https://maptiles.turku.fi/data/finland.json"
+      "url": "/data/finland.json"
     }
   },
   "glyphs": "{fontstack}/{range}.pbf",
